@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -5,7 +6,9 @@ function App() {
     <>
       <div className="container-app">
         <div className="container-app__title">Cremería</div>
-        <button>Registrar piezas faltantes</button>
+        <Link to="/registrar-pzs-faltantes">
+          <button>Registrar piezas faltantes</button>
+        </Link>
       </div>
     </>
   );
