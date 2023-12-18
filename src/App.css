@@ -1,0 +1,13 @@
+.container-app {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-app__title {
+    font-size: 2em;
+    margin: 30px;
+}
