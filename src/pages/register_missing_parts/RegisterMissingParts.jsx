@@ -13,12 +13,6 @@ export const RegisterMissingParts = () => {
 
   const handleRegister = (event) => {
     event.preventDefault();
-    console.log({ name });
-    console.log({ amountPieces });
-    console.log({ totalCost });
-    console.log({ unitCost });
-    console.log({ publicPrice });
-    console.log({ revenue });
 
     const register = {
       name,
