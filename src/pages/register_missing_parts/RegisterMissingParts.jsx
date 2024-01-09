@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import './styles.css';
 
 export const RegisterMissingParts = () => {
@@ -30,6 +32,16 @@ export const RegisterMissingParts = () => {
     query
       .then(({ id }) => {
         setId(id);
+        toast.success('Se ha registrado con éxito', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       })
       .catch((error) => {
         console.log(error);
@@ -125,6 +137,7 @@ export const RegisterMissingParts = () => {
         </div>
         <button type="submit">Registrar</button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
