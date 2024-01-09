@@ -1,6 +1,7 @@
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import './styles.css'
+import '../../constants/colors.css'
 
 export const ListRegistersMissingParts = () => {
   const [listRegisters, setListRegisters] = useState([]);
@@ -22,19 +23,19 @@ export const ListRegistersMissingParts = () => {
 
   return (
     <div className="container-list-register">
-      <h1 className="conatiner-list-register__title">
+      <div className="conatiner-list-register__title">
         Lista de registros de piezas faltantes
-      </h1>
+      </div>
       <div className='conatiner-list-register__box-list'>
         {listRegisters.map((register) => {
           return (
             <div key={register.id} className='conatiner-list-register__box-list__item'>
-              <p>Nombre: {register.name}</p>
-              <p>Cantidad de piezas: {register.amountPieces}</p>
-              <p>Costo total: ${register.totalCost}</p>
-              <p>Costo unitario: ${register.unitCost}</p>
-              <p>Precio público: ${register.publicPrice}</p>
-              <p>Ganancia: ${register.revenue}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Nombre:</span> {register.name}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Cantidad de piezas:</span> {register.amountPieces}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Costo total:</span> ${register.totalCost}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Costo unitario:</span> ${register.unitCost}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Precio público:</span> ${register.publicPrice}</p>
+              <p><span className='conatiner-list-register__box-list__item__span'>Ganancia:</span> ${register.revenue}</p>
             </div>
           );
         })}

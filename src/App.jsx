@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import './App.css';
+import './constants/colors.css'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDXJnCSLQD2o5lqmaPW1AF5F59kPDJcvWk',
