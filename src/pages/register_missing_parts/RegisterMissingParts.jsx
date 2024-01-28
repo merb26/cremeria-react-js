@@ -83,58 +83,6 @@ export const RegisterMissingParts = () => {
             required
           />
         </div>
-        <div>
-          <label htmlFor="totalCost" className="input-field">
-            Costo total:{' '}
-          </label>
-          <input
-            type="text"
-            id="totalCost"
-            name="totalCost"
-            value={totalCost}
-            onChange={(e) => setTotalCost(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="unitCost" className="input-field">
-            Costo unitario:{' '}
-          </label>
-          <input
-            type="text"
-            id="unitCost"
-            name="unitCost"
-            value={unitCost}
-            onChange={(e) => setUnitCost(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="publicPrice" className="input-field">
-            Precio al público:{' '}
-          </label>
-          <input
-            type="text"
-            id="publicPrice"
-            name="publicPrice"
-            value={publicPrice}
-            onChange={(e) => setPublicPrice(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="revenue" className="input-field">
-            Ganancia:{' '}
-          </label>
-          <input
-            type="text"
-            id="revenue"
-            name="revenue"
-            value={revenue}
-            onChange={(e) => setRevenue(e.target.value)}
-            required
-          />
-        </div>
         <button type="submit">Registrar</button>
       </form>
       <ToastContainer />
