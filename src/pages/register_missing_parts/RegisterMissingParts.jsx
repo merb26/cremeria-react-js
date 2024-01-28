@@ -7,11 +7,6 @@ import './styles.css';
 export const RegisterMissingParts = () => {
   const [name, setName] = useState('');
   const [amountPieces, setAmountPieces] = useState('');
-  const [totalCost, setTotalCost] = useState('');
-  const [unitCost, setUnitCost] = useState('');
-  const [publicPrice, setPublicPrice] = useState('');
-  const [revenue, setRevenue] = useState('');
-  const [id, setId] = useState('');
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -19,10 +14,6 @@ export const RegisterMissingParts = () => {
     const register = {
       name,
       amountPieces,
-      totalCost,
-      unitCost,
-      publicPrice,
-      revenue,
     };
 
     const db = getFirestore();
@@ -30,8 +21,7 @@ export const RegisterMissingParts = () => {
     const query = addDoc(registerCollection, register);
 
     query
-      .then(({ id }) => {
-        setId(id);
+      .then(() => {
         toast.success('Se ha registrado con éxito', {
           position: "top-center",
           autoClose: 2000,
