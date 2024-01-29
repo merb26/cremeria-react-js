@@ -3,6 +3,7 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './styles.css';
+import { currentDate } from '../../utils/currentDate';
 
 export const RegisterMissingParts = () => {
   const [name, setName] = useState('');
@@ -14,6 +15,7 @@ export const RegisterMissingParts = () => {
     const register = {
       name,
       amountPieces,
+      date: currentDate()
     };
 
     const db = getFirestore();
