@@ -19,6 +19,9 @@ function App() {
     <>
       <div className="container-app">
         <div className="container-app__title">Cremería</div>
+        <Link to="/mercancias">
+          <button>Mercancías</button>
+        </Link>
         <Link to="/pzs-faltantes">
           <button>Piezas faltantes</button>
         </Link>

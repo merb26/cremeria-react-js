@@ -1,0 +1,12 @@
+.container-merchandise {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-merchandise__title {
+  font-size: 2em;
+  margin: 30px;
+}
