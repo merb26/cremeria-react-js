@@ -5,6 +5,7 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RegisterMissingParts } from './pages/register_missing_parts/RegisterMissingParts.jsx';
 import { ListRegistersMissingParts } from './pages/list_registers_missing_parts/ListRegistersMissingParts.jsx';
+import { MissingParts } from './pages/missing_parts/MissingParts.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route index path="/" element={<App />}/>
       <Route index path="/registrar-pzs-faltantes" element={<RegisterMissingParts />}/>
       <Route index path="/lista-registro-pzs-faltantes" element={<ListRegistersMissingParts />}/>
+      <Route index path="/pzs-faltantes" element={<MissingParts />}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -19,11 +19,8 @@ function App() {
     <>
       <div className="container-app">
         <div className="container-app__title">Cremería</div>
-        <Link to="/lista-registro-pzs-faltantes">
-          <button>Lista de piezas faltantes</button>
-        </Link>
-        <Link to="/registrar-pzs-faltantes">
-          <button>Registrar piezas faltantes</button>
+        <Link to="/pzs-faltantes">
+          <button>Piezas faltantes</button>
         </Link>
       </div>
     </>

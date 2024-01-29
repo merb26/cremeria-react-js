@@ -1,0 +1,13 @@
+.container-missing {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.container-missing__title {
+    font-size: 2em;
+    margin: 30px;
+}
