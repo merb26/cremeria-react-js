@@ -32,10 +32,6 @@ export const ListRegistersMissingParts = () => {
             <div key={register.id} className='conatiner-list-register__box-list__item'>
               <p><span className='conatiner-list-register__box-list__item__span'>Nombre:</span> {register.name}</p>
               <p><span className='conatiner-list-register__box-list__item__span'>Cantidad de piezas:</span> {register.amountPieces}</p>
-              <p><span className='conatiner-list-register__box-list__item__span'>Costo total:</span> ${register.totalCost}</p>
-              <p><span className='conatiner-list-register__box-list__item__span'>Costo unitario:</span> ${register.unitCost}</p>
-              <p><span className='conatiner-list-register__box-list__item__span'>Precio público:</span> ${register.publicPrice}</p>
-              <p><span className='conatiner-list-register__box-list__item__span'>Ganancia:</span> ${register.revenue}</p>
             </div>
           );
         })}
