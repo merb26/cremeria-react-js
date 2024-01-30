@@ -7,6 +7,7 @@ import { RegisterMissingParts } from './pages/register_missing_parts/RegisterMis
 import { ListRegistersMissingParts } from './pages/list_registers_missing_parts/ListRegistersMissingParts.jsx';
 import { MissingParts } from './pages/missing_parts/MissingParts.jsx';
 import { Merchandise } from './pages/merchandise/Merchandise.jsx';
+import { RegisterMerchandise } from './pages/register_merchandise/RegisterMerchandise.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route index path="/lista-registro-pzs-faltantes" element={<ListRegistersMissingParts />}/>
       <Route index path="/pzs-faltantes" element={<MissingParts />}/>
       <Route index path="/mercancias" element={<Merchandise />}/>
+      <Route index path="/mercancias/registrar" element={<RegisterMerchandise />}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
